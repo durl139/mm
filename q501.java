@@ -1,3 +1,8 @@
+/**
+ * 設問１︓1から100までの偶数の和を求める(for + if)。
+ * @author he
+ *	@date 2021/5/17
+ */
 
 public class q501 {
 

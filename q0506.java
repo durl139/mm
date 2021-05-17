@@ -20,4 +20,4 @@ public class q0506 {
 	        }
 	    }
 	}
-//http://www.creative-forest.com/java/java_intro/array/application/application.html
+
