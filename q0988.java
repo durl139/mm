@@ -1,25 +1,22 @@
 
 public class q0988 {
 
-	public static void main(String[] args) {
-		int[]array={1, 3, 5, 7, 100, 0, 1};
-		int max=array[0];
-		int min=array[0];
-		System.out.println("配列");
-		for(int i = 0; i < array.length; i++) {
-			if(max<array[i]){
-				max=array[i];
-			}
-			if(min<array[i]){
-				min=array[i];
-			}
-			for(int j=0;j < array.length;j++)
-				{
-					System.out.println(array[i]+"");
-		}
+	  public static void main(String[] args) {
+	        int[] arr = new int[]{1, 2, 3, 4, 5, 6};
+	        printArr(arr);
+	        arr = deleteFirst(arr);
+	        printArr(arr);
+	    }
 
-		System.out.println("最大値:"+max+"最小値:"+min);
+	    static void printArr(int[] arr) {
+	        for (int i : arr) {
+	            System.out.print(i + " ");
+	        }
+	        System.out.println();
+	    }
 
-}
-	}
-}
+	    static int[] deleteFirst(int[] arr) {
+	        int[] temp = new int[arr.length - 1];
+	        System.arraycopy(arr, 1, temp, 0, temp.length);
+	        return temp;
+	    }
