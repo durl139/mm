@@ -1,7 +1,7 @@
 
 public class q0503 {
 
-	public static void main(String[] args) {
+	public static int max(int[] input) {
 			int[]array={1, 2, 6, 7, 9, 6, 2, 1};
 			int sum=0;
 			int avg=0;
