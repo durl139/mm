@@ -1,0 +1,27 @@
+@RestController
+@RequestMapping("system")
+@Validated
+public class PhaseController {
+
+    @Autowired
+    PhaseService phaseService;
+
+    /**
+     * phaseList
+     * @param
+     * @return
+     */
+    @GetMapping("/phase/list")
+    public HttpResponse PhaseList() {
+        return phaseService.PhaseList();
+    }
+    /**
+     * Phase create
+     * @param PhaseCRequestModel
+     * @return
+     */
+    @PostMapping("/phase/c")
+    public HttpResponse phaseC(@NotNull @Valid @RequestBody PhaseCRequestModel phaseCRequestModel) {
+        return phaseService.c(phaseCRequestModel);
+    }
+}
